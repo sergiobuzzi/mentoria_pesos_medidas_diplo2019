@@ -1,0 +1,24 @@
+Cuando tomamos la mediana, como unimos la base? ¿Sobreescribimos el datataset original reemplazando a las variables numéricas
+ por los valores de las medianas por PRODUCT_ID?
+
+En la actividad 6 se pide imputar números a las variables categóricas. 
+Entendemos que hay que crear una matriz de variables de intervención para cada atributo categórico, donde cada columna es una categoría.
+La mayoría de las variables tienen demasiados valores únicos, 
+por ejemplo seller_id tiene mas de 3000 valores en una muestra de 10000 registros, por lo que se generarían al menos 3000 variables.
+
+Será recomendable solo incluir condition (3 categorías en la muestra de 10000) y catalog_product_id(485 categorías en la muestra de 10000) 
+¿También domain_ID (908 categorias)?
+
+
+0    485
+dtype: int64
+0    3
+dtype: int64
+0    908
+dtype: int64
+0    3380
+dtype: int64
+0    4377
+dtype: int64
+
+En la actividad 7, en la imputación por knn. ¿Qué variables usar? (bastante ligado a la desición tomada en actividad 6)
